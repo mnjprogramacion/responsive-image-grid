@@ -2,6 +2,47 @@
     box-sizing: border-box;
 }
 
+body {
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(230, 188, 255);
+}
+
+.header {
+    text-align: center;
+    padding: 32px;
+    background-color: #3c004e;
+    color: rgb(255, 255, 255);
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.columna {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
 img {
-    max-width: 200px;
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+    .columna {
+    flex: 50%;
+    max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .columna {
+    flex: 100%;
+    max-width: 100%;
+    }
 }
